@@ -11,6 +11,7 @@
         <module>greeter-looser</module>
         <module>greeter-boss</module>
         <module>gogo-commands</module>
+        <module>greeter-girl</module>
     </modules>
 
     <packaging>pom</packaging>

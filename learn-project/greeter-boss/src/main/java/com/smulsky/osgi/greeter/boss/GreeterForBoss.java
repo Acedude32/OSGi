@@ -2,12 +2,14 @@ package com.smulsky.osgi.greeter.boss;
 
 import com.smulsky.osgi.greeter.api.Greeter;
 import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.osgi.service.log.LogService;
 
 @Service
-@Component(immediate = true)
+@Component(immediate = true, metatype = true)
+@Property(name = "type", value = "interesting.person")
 public class GreeterForBoss implements Greeter {
 
     @Reference

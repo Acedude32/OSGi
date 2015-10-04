@@ -18,7 +18,8 @@ public class GreeterCommand {
                 policy = ReferencePolicy.DYNAMIC,
                 referenceInterface = Greeter.class,
                 bind = "setGreeter",
-                unbind = "unsetGreeter")
+                unbind = "unsetGreeter",
+                target = "(type=interesting.person)")
     private List<Greeter> greeters;
 
     public void greet(){
@@ -27,7 +28,7 @@ public class GreeterCommand {
 
     protected void setGreeter(Greeter greeter) {
         if (greeters == null) {
-            greeters = new ArrayList<Greeter>();
+            greeters = new ArrayList<>();
         }
         greeters.add(greeter);
     }
