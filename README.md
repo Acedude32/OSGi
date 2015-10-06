@@ -1,4 +1,4 @@
-To run these apps you need to run Apache Felix (or another OSGi framework implementation) and install these bundles:
+To run these apps you need to run Apache Felix and install these bundles:
 
 START LEVEL 1
    ID|State      |Level|Name
