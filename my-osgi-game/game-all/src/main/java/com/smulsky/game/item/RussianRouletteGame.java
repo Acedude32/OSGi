@@ -1,12 +1,12 @@
-package com.smulsky.game.all;
+package com.smulsky.game.item;
 
 import com.smulsky.game.api.Game;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Service;
 
 @Component(immediate = true)
-@Service
-public class RussianRouletteGame implements Game {
+@Service(Game.class)
+public class RussianRouletteGame extends Game {
     public void start() {
         System.out.println("RussianRouletteGame started");
     }
